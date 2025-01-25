@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Settings</title>
+<!-- Ensure the correct path -->
+</head>
+<body>
+    <div class="settings-container">
+        <h2>User Settings</h2>
+
+        <form id="settings-form">
+            <div>
+                <label for="username">Username:</label>
+                <input type="text" id="username" name="username" required>
+            </div>
+            <div>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+
+            <h3>Change Password</h3>
+            <div>
+                <label for="old-password">Old Password:</label>
+                <input type="password" id="old-password" name="old-password">
+            </div>
+            <div>
+                <label for="new-password">New Password:</label>
+                <input type="password" id="new-password" name="new-password">
+            </div>
+
+            <button type="submit">Update Settings</button>
+        </form>
+
+        <div id="response-message"></div>
+    </div>
+
+    <script src="/assets/settings.js"></script> <!-- Ensure the correct path -->
+</body>
+</html>
